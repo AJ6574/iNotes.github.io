@@ -1,0 +1,19 @@
+.allnotes{
+    margin-top: 15px;
+    width: 20vw;
+    padding-left: 20px;
+}
+.allnotes .note{
+    color: var(--light);
+    border-radius: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 15vw;
+    list-style: circle;
+    padding: 5px;
+}
+.allnotes .note:hover{
+    background-color: var(--light);
+    color: var(--dark1);
+
+}

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}
+:root{
+    --dark1: rgb(10, 10, 10);
+    --dark2: rgb(26, 26, 26);
+    --light: whitesmoke;
+}
+body{
+    background-color: var(--dark2);
+}

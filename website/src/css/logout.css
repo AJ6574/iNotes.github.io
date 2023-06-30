@@ -1,0 +1,27 @@
+.profile{
+    width: 15vw;
+    height: 8vh;
+    position: absolute;
+    top: 40px;
+    right: 190px;
+    display: none;
+    background-color: var(--dark1);
+    border-radius: 10px;
+}
+.profile:hover{
+    display: block;
+}
+.profile .logout{
+    cursor: pointer;
+    color: var(--light);
+    background-color: var(--dark1);
+    border: 1px solid var(--light);
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    transition: all 200ms linear;
+}
+.profile .logout:hover{
+    color: var(--dark1);
+    background-color: var(--light);
+}

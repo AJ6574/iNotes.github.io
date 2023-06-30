@@ -1,0 +1,22 @@
+.messege{
+    display: none;
+    color: var(--dark1);
+    align-items: center;
+    height: 6vh;
+}
+.messege strong{
+    color: var(--dark1);
+}
+.messege .btn{
+    position: absolute;
+    right: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    width: 3%;
+}
+.success{
+    background-color: lightgreen;
+}
+.error{
+    background-color: rgb(253, 91, 91);
+}
