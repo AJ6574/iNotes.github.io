@@ -13,7 +13,6 @@ export default function Navbar() {
             <ul className="navbar">
                 <li className="navitem"><Link className='tab' to="/">Home</Link></li>
                 <li className="navitem"><Link className='tab' to="/about">About</Link></li>
-                <li className="navitem"><Link className='tab' to="/contact">Contact</Link></li>
                 {
                   !user.loggedIn?<li className="navitem"><Link className='tab' to="/login">LogIn</Link></li>:<li id='profile-tab'  className="navitem"><Link className='tab' to="/login">Welcome, {user.userData.Username}</Link><Profile/></li>
                 }

@@ -7,7 +7,6 @@ import NoteState from './context/NoteState';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Messege from './components/Messege';
-import Contact from './components/Contact';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Routes>
           <Route path = '/' element={<Home/>} />
           <Route path = '/about' element={<About/>} />
-          <Route path = '/contact' element={<Contact/>} />
           <Route path = '/login' element={<Login/>} />
           <Route path = '/signup' element={<SignUp/>} />
         </Routes>

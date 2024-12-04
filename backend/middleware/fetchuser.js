@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const fs = require('fs')
 const path = require('path')
 
-const jwtAuth = fs.readFileSync(path.join(__dirname, '../auth_token.key'))//fetching jwt signing token
+const jwtAuth = process.env.AUTH_TOKEN//fetching jwt signing token
 const fetchuser = (req, res, next) => {
     try {
         const auth_token = req.header('auth-token')//fetching auth token sent by header

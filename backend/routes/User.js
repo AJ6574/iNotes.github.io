@@ -3,8 +3,6 @@ const bodyParser = require('body-parser')
 const {body, validationResult} = require('express-validator')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const fs = require('fs')
-const path = require('path')
 const User = require('../models/userModel')
 const fetchuser = require('../middleware/fetchuser')
 const router = express.Router()
@@ -44,7 +42,7 @@ router.post('/new-user', [
                     }
                 }
                 //fetching signature data from key file
-                const jwtAuth = fs.readFileSync(path.join(__dirname, '../auth_token.key'))
+                const jwtAuth = process.env.AUTH_TOKEN
                 const jwtToken = jwt.sign(jwtData, jwtAuth) //generating auth token
                 res.json({jwtToken})
             }
@@ -86,7 +84,7 @@ router.post('/user-login', [
                         }
                     }
                     //fetching signature data from key file
-                    const jwtAuth = fs.readFileSync(path.join(__dirname, '../auth_token.key'))
+                    const jwtAuth = process.env.AUTH_TOKEN
                     const jwtToken = jwt.sign(jwtData, jwtAuth) //generating auth token
                     res.json({jwtToken})
                 }
